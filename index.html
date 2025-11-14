@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title> 31-1 페이지 기본 언어 설정 체크 </title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      background-color: #fafafa;
+    }
+    .case {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .label {
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+      font-weight: bold;
+      border-radius: 0.4rem;
+      font-size: 0.95rem;
+      margin-right: 0.6rem;
+    }
+    .fail {
+      color: #b71c1c;
+      background-color: #ffebee;
+      border: 1px solid #f44336;
+    }
+    .pass {
+      color: #1b5e20;
+      background-color: #e8f5e9;
+      border: 1px solid #4caf50;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      margin-top: 1rem;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.9rem;
+    }
+    
+    .excep{
+      color: #5E5E5E;
+      background-color: #C0C0C0;
+      border: 1px solid #424242;
+    }
+    /* 기본 스타일 정리 */
+  </style>
+</head>
+<body>
+  <h1>3.1.1 Language of Page 테스트</h1>
+  <div class="case">
+    <span class="label fail">A31001</span>
+    <span>lang 속성 부재 또는 빈 값</span>
+    <p>lang 속성 부재</p>
+          <a href="C:\Users\jieun\OneDrive\바탕 화면\lang 속성 확인 페이지\no_lang.html" target="_blank" title="open in a new window">Test Case 1-1</a>
+    <p>lang 속성 빈값</p>
+          <a href="C:\Users\jieun\OneDrive\바탕 화면\lang 속성 확인 페이지\empty_lang.html" target="_blank" title="open in a new window">Test Case 1-2</a>
+  </div>
+  <div class="case">
+    <span class="label fail">A31002</span>
+    <span>유효하지 않은 언어 코드</span>
+    <p>lang 속성 zz제공</p>
+      <a href="C:\Users\jieun\OneDrive\바탕 화면\lang 속성 확인 페이지\no_valid_lang.html" target="_blank" title="open in a new window">Test Case 2</a> 
+  </div>
+  
+  <div class="case">
+    <span class="label pass">A31003</span>
+    <span>유효한 언어 코드</span>
+    <p>lang 속성 제공되었으며 유효한 언어코드 제공됨</p>
+          <a href="C:\Users\jieun\OneDrive\바탕 화면\lang 속성 확인 페이지\valid_lang.html" target="_blank" title="open in a new window">Test Case 3</a> 
+  </div>
+      
+  </div>
+</body>
+</html>
